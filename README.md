@@ -1,47 +1,30 @@
-# Hand and Face Detection
+# Real-Time Face and Hand Detection System
 
-Hand and Face Detection is a Python application that uses OpenCV and MediaPipe to detect faces and hands in real-time video streams.
+## Overview
+This Python application detects faces and hands in real-time using:
+- OpenCV's Haar Cascade for face detection
+- MediaPipe for hand detection and landmark visualization
+
+## Features
+- 👥 Face detection with bounding boxes
+- ✋ Hand detection with 21 landmarks per hand
+- � Real-time processing (15-30 FPS)
+- 🖥️ Clean visualization interface
 
 ## Installation
-
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the required dependencies.
-
+1. Install Python 3.7+
+2. Install dependencies:
 ```bash
 pip install opencv-python mediapipe
+Usage
+Run the detection script:
 
-## Usage
-python
-python hand_face_detection.py
-The application will open your webcam and display:
+bash
+python detect.py
+Controls:
 
-Blue rectangles around detected faces
+Press 'q' to quit
 
-Green rectangles around detected hands
+Blue rectangles = Detected faces
 
-Hand landmarks drawn on detected hands
-
-Press 'q' to quit the application.
-
-Features
-Real-time face detection using Haar cascades
-
-Hand detection with MediaPipe
-
-Hand landmark visualization
-
-Simple and clean visualization of detection results
-
-Requirements
-Python 3.6+
-
-OpenCV (cv2)
-
-MediaPipe
-
-Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-License
-MIT
+Green rectangles = Detected hands
