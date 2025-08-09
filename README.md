@@ -9,7 +9,7 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the req
 ```bash
 pip install opencv-python mediapipe
 
-Usage
+## Usage
 python
 python hand_face_detection.py
 The application will open your webcam and display:
